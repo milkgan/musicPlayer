@@ -1,0 +1,18 @@
+总结：gulp打包，less编写css，jq编写js，模块化，html5
+1.gulp打包和webpack打包的区别
+gulp是基于流操作的打包，webpack是基于模块化的打包
+2.nvm管理node模板
+ nvm install 版本号，nvm use 版本号
+3.学习了利用jq的思想去将接口暴露出去，而不会污染到变量
+（function（root）{
+       定义了一个fn abc（）
+       root.abc = abc 
+}）（window.player || (window.player = {})）
+4.重复用的多的代码对其进行抽离单独封装成一个模块，优化
+5.zepto.js适合于移动端，更加轻量级，按需加载插件
+6.移动端正方形思想，padding-top的百分比值受父级宽影响
+7.注意在es5的环境中使用了es6语法，如果没有安装像这样的gulp-babel转换插件，
+js压缩会报错压不了
+
+
+
